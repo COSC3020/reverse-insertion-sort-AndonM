@@ -5,7 +5,7 @@ const testSort = jsc.forall("array nat", function (arr) {
     let a1 = JSON.parse(JSON.stringify(arr));
     let a2 = JSON.parse(JSON.stringify(arr));
     a2.sort(function (a, b) {
-        return b - a;
+        return a - b;
     });
     return JSON.stringify(insertionSortReverse(a1)) === JSON.stringify(a2);
 });
