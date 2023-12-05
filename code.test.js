@@ -1,3 +1,5 @@
+// UNSURE HOW TO CORRECT. I'VE TRIED A FEW DIFFERENT THINGS NOW
+
 const fs = require('fs');
 const jsc = require('jsverify');
 eval(fs.readFileSync('code.js') + '');
