@@ -32,4 +32,4 @@ average-case time complexity ($\Theta$)?
 
 In the average case, we are dealing with an array that is somewhere between fully sorted and sorted in descending order. (e.g. a random permutation)
 In this case, we must shift roughly half of the elements to get them to their correct positions. 
-This gives us ($\((n/2 * n/2) = ((n^2/4)$)) which is asymptotically equivalent to ($\Theta (n^2)$) akin to the worst-case.
+This gives us $\(n/2 * n/2) = (n^2/4)$ which is asymptotically equivalent to $\Theta(n^2)$ akin to the worst-case.
