@@ -30,10 +30,6 @@ In the lectures, we covered that insertion sort has best-case time complexity of
 $\Theta(n)$ and worst-case time complexity of $\Theta(n^2)$. What is the
 average-case time complexity ($\Theta$)?
 
-Hint: Think about what happens in each iteration of the loop, and how often the
-loop is executed. Keep in mind that for asymptotic analysis we don't care about
-constant factors.
-
-Describe your reasoning and the conclusion you've come to. Your reasoning is
-most important -- you can easily find the answer, but you need to demonstrate
-that you've understood the concept. Add your answer to this markdown file.
+In the average case, we are dealing with an array that is somewhere between fully sorted and sorted in descending order. (e.g. a random permutation)
+In this case, we must shift roughly half of the elements to get them to their correct positions. 
+This gives us ($\((n/2 * n/2) = ((n^2/4)$)) which is asymptotically equivalent to ($\Theta (n^2)$) akin to the worst-case.
