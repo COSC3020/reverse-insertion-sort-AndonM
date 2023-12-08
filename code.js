@@ -1,16 +1,14 @@
 function insertionSortReverse(arr) {
-  if (arr.length <= 1) {
-    return arr;
-  }
-  else {
-  for (let i = arr.length - 1; i >= 0; i--) {
-    let val = arr[i];
-    let j;
-    for (j = i; j < arr.length && arr[j] > val; j++) {
-      arr[j] = arr[j - 1];
+  let arrayLength = arr.length;
+  if(arrayLength > 0) {
+      for(let i = arrayLength-2; i > -1; i--) {
+          let currentVal = arr[i];
+          let j;
+          for(j = i; j < arrayLength && arr[j+1] < currentVal; j++) {
+              arr[j] = arr[j+1];
+          }
+          arr[j] = currentVal;
       }
-    arr[j] = val;
-    }
-  return arr;
   }
+  return arr; 
 }
