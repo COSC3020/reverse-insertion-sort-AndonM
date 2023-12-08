@@ -11,5 +11,4 @@ const testSort =
             JSON.stringify(a2.sort(function(a, b)
                 { return a - b; }));
     });
-
 jsc.assert(testSort);
